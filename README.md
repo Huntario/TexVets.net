@@ -23,7 +23,6 @@ Damon - backend - (Node/Mongo DB)
 
 Mike - backend - (MongoDB)
 
-		1. Build database
-		2. Insert data
-		3. Create "tags" that help categorize data so the it can be retrvied with keywords
+		1. Determine info, structure in a MongoDB database
+		2. Create "tags" that help categorize data so the it can be retrvied with keywords
 
