@@ -2,6 +2,8 @@
 An online chat bot to help veterans transition to civilian life.
 
 
+TEAM ROLES
+
 Julia - frontend - (PaperChat --> Material desing and Polymer)
 
 		--https://github.com/pubnub/paper-chat
