@@ -15,6 +15,7 @@ Hunter - frontend/backend - (Socket.io)
 		--http://socket.io/
 		1. Get chat data to the backend
 		2. Get server response back to the chat application
+		3. Parse user sentences down to keywords
 
 Damon - backend - (Node/Mongo DB)
 
