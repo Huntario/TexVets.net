@@ -5,17 +5,32 @@
  *
  * Made By MaterializeCSS.com
  */
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }
 
+.message-section{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
 }
-
+.texvet-logo{
+  width: 30%;
+  margin-top: .75%;
+}
 p {
   line-height: 2rem;
 }
 .texas{
   margin-top: 30%;
+}
+.texas-index{
+  width: 50%;
+  margin-left: 25%;
 }
 .space-top{
    margin-top: 25%;
