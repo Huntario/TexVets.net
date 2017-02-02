@@ -5,6 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
+
 #messages { list-style-type: none; margin: 0; padding: 0; }
 #messages li { padding: 5px 10px; }
 #messages li:nth-child(odd) { background: #eee; }
@@ -14,6 +15,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 nav ul a,
 nav .brand-logo {
   color: #444;

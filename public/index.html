@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>TexVet</title>
+  <title>TexVets</title>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -16,11 +16,11 @@
         <img class="texvet-logo" src="texvet-logo.png">
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Search</a></li>
+        <li><a href="#search-section">Search</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Search</a></li>
+        <li><a href="#search-section">Search</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -35,13 +35,13 @@
           <h5 class="header col s12 light">Let us help you Connect</h5>
         </div>
         <div class="row center">
-          <a href="#" id="download-button" class="btn-large waves-effect btn-dark-b">Get Started</a>
+          <a href="#search-section" id="download-button" class="btn-large waves-effect btn-dark-b">Get Started</a>
         </div>
         <br><br>
       </div>
     </div>
     <div class="parallax">
-    <img src="background.jpg" alt="Unsplashed background img 1"></div>
+    <img src="background2.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 <div class="jumbotron"></div>
@@ -86,11 +86,12 @@
 
     </div>
   </div>
+  <a id="search-section">
     <div class="section">
       <div class="row">
       <div class="message-section center">
-            <ul id="messages"></ul>
-            <h4>Search Our Database</h4>
+      <h4 class="text-dark-b">What can we Help you with?</h4>
+            <ul id="messages" style="overflow-y:scroll; height:75px; background:#d3d3d3"></ul>
         <form action="">
           <input class="center" id="m" autocomplete="off" />
           <button id="btn-send" class="btn-large waves-effect btn-dark-b">Send</button>
@@ -98,7 +99,7 @@
     </div>
       </div>
     </div>
-
+</a>
 
 
   <footer class="page-footer footer-dark-b">
@@ -111,19 +112,19 @@
         <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#">Link 1</a></li>
+            <li><a class="white-text" href="#">Link 2</a></li>
+            <li><a class="white-text" href="#">Link 3</a></li>
+            <li><a class="white-text" href="#">Link 4</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Facebook</a></li>
-            <li><a class="white-text" href="#!">Github</a></li>
-            <li><a class="white-text" href="#!">Twitter</a></li>
-            <li><a class="white-text" href="#!">LinkedIn</a></li>
+            <li><a class="white-text" href="#">Facebook</a></li>
+            <li><a class="white-text" href="#">Github</a></li>
+            <li><a class="white-text" href="#">Twitter</a></li>
+            <li><a class="white-text" href="#">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -144,8 +145,8 @@
     $('form').submit(function(){
     var m = $('#m').val();
     socket.emit('chat message', m);
-    $('#messages').append(m);
-    $('#messages').append('<br>');
+    $('#messages').prepend(m);
+    $('#messages').prepend('<br>');
     $('#m').val('');
     return false;
   });
