@@ -2,10 +2,13 @@ var app = require('express')();
 var express = require('express');
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var Schools = require("./models/Schools.js");
+var Jerbs = require("./models/Jerbs.js");
+var Clinics = require("./models/Clinics.js");
+var Social = require("./models/Social.js");
 
 
 var port = process.env.PORT || 3000;
-
 
 app.use(express.static(__dirname + '/public'));
 
