@@ -15,11 +15,11 @@
       <a id="logo-container" href="#" class="brand-logo">
         <img class="texvet-logo" src="texvet-logo.png">
       </a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="jumper right hide-on-med-and-down">
         <li><a href="#search-section">Search</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="side-nav">
+      <ul id="nav-mobile" class="jumper side-nav">
         <li><a href="#search-section">Search</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -86,7 +86,7 @@
 
     </div>
   </div>
-  <a id="search-section">
+  <div id="search-section">
     <div class="section">
       <div class="row">
       <div class="message-section center">
@@ -99,7 +99,7 @@
     </div>
       </div>
     </div>
-</a>
+</div>
 
 
   <footer class="page-footer footer-dark-b">
@@ -145,7 +145,7 @@
     $('form').submit(function(){
     var m = $('#m').val();
     socket.emit('chat message', m);
-    $('#messages').prepend(m);
+    $('#messages').prepend('<li class="message-li">' + m);
     $('#messages').prepend('<br>');
     $('#m').val('');
     return false;
