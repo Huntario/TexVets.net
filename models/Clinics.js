@@ -19,7 +19,6 @@ var UserSchema = new Schema({
     // The ObjectIds will refer to the ids in the Note model
     ref: "Note"
   }],
-  ,
   link: {
     type: String,
     unique: true
