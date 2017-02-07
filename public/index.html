@@ -7,7 +7,9 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -24,6 +26,7 @@
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
+    
   </nav>
 
   <div id="index-banner" class="parallax-container">
@@ -44,7 +47,6 @@
     <img src="background2.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
-<div class="jumbotron"></div>
   </div>
 
 
@@ -55,7 +57,6 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <!-- <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2> -->
             <div class="space-top"></div>
             <h5 class="center">How to Use Our Chat</h5>
 
@@ -67,19 +68,33 @@
         </div>
 
         <div class="col s12 m4">
+         <div class="space-top"></div>
           <div class="icon-block">
-           <!-- <h2 class="center brown-text"><i class="material-icons">group</i></h2> -->
-           <div class="space-top"></div>
             <h5 class="center">Select your location</h5>
 
-            <p class="light">When entering the chat you will be asked your location. Please locate your given area on the map.</p>
-            <img class="texas-index" src="texas-index.png">
+<p><input type="button" id="theButton" value="North Texas" style="background-color: #7092bc;" onclick="NpictureChange()"></p>
+
+<p><input type="button" id="theButton" value="East Texas" style="background-color: #5f5f5f;" onclick="EpictureChange()"></p>
+
+<p><input type="button" id="theButton" value="Central Texas" style="background-color: #c31312;" onclick="CpictureChange()"></p>
+
+<p><input type="button" id="theButton" value="South Texas" style="background-color: #b0cff5;" onclick="SpictureChange()"></p>
+
+<p><input type="button" id="theButton" value="West Texas" style="background-color: #d1d1d1;" onclick="WpictureChange()"></p>
+
+<p><input type="button" id="theButton" value="Main Map" style="background-color: #7092bc;" onclick="MpictureChange()"></p>
+
+
           </div>
         </div>
 
         <div class="col s12 m4">
+         <div class="space-top"></div>
           <div class="icon-block">
-            <img class="center texas" src="texas-sections.png">
+
+            <img id="theImage"
+            class="center texas" src="texas-sections.png">
+
           </div>
         </div>
       </div>
@@ -91,7 +106,7 @@
       <div class="row">
       <div class="message-section center">
       <h4 class="text-dark-b">What can we Help you with?</h4>
-            <ul id="messages" style="overflow-y:scroll; height:75px; background:#d3d3d3"></ul>
+            <ul id="messages" style="overflow-y:scroll; height:125px; background:#d3d3d3"></ul>
         <form action="">
           <input class="center" id="m" autocomplete="off" />
           <button id="btn-send" class="btn-large waves-effect btn-dark-b">Send</button>
@@ -110,7 +125,7 @@
           <p class="grey-text text-lighten-4">We are a team from UT Coding Bootcamp working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Developers</h5>
           <ul>
             <li><a class="white-text" href="#">Link 1</a></li>
             <li><a class="white-text" href="#">Link 2</a></li>
@@ -155,6 +170,30 @@
     io.emit('chat message', msg);
     });
   });
+function NpictureChange()
+{
+document.getElementById("theImage").src="NTX.png";
+}
+function WpictureChange()
+{
+document.getElementById("theImage").src="ETX.png";
+}
+function CpictureChange()
+{
+document.getElementById("theImage").src="CTX.png";
+}
+function SpictureChange()
+{
+document.getElementById("theImage").src="STX.png";
+}
+function EpictureChange()
+{
+document.getElementById("theImage").src="WTX.png";
+}
+function MpictureChange()
+{
+document.getElementById("theImage").src="texas-sections.png";
+}
   </script>
 
   </body>

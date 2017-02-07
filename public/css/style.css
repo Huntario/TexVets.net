@@ -5,13 +5,52 @@
  *
  * Made By MaterializeCSS.com
  */
+/*/ STATE MAP/*/
+#theButton{
+  width: 50%;
+  border-radius: 25px;
+  margin-left: 25%;
+  border:none;
+}
 
+.state-area{
+  margin-top: 20%;
+}
+.texas{
+      width: 350px;
+}
+p.n-text + img#ntx{
+  display: block;
+}
+#theImage{
+      position: absolute;
+      z-index: 6;}
+#ntx{
+      position: absolute;
+      display: none;
+      z-index:5 ;}
+#stx{ position: absolute;
+      display: none;
+      z-index: 4;}
+#etx{
+      position: absolute;
+      display: none;
+      z-index: 3;}
+#wtx{ position: absolute;
+      display: none;
+      z-index: 2;}
+#main-tx{
+      position: absolute;
+      display: block;
+      z-index:1 ;}
+
+/*/ CSS/*/
 #messages { list-style-type: none; margin: 0; padding: 0; }
-#messages li { padding: 5px 10px; }
+/*/#messages li { padding: 5px 10px; }/*/
 #messages li:nth-child(odd) { background: #eee; }
 
 .message-li{
-  font-size: 25px;
+  font-size: 20px;
   color: black;
 }
 
@@ -32,12 +71,7 @@ nav .brand-logo {
 p {
   line-height: 2rem;
 }
-.texas{
-  margin-top: 30%;
-}
 .texas-index{
-  width: 50%;
-  margin-left: 25%;
 }
 .space-top{
    margin-top: 25%;
