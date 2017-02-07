@@ -1,17 +1,33 @@
 /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 
+/*/ STATE MAP/*/
+#theButton{
+  width: 50%;
+  border-radius: 25px;
+  margin-left: 25%;
+  border:none;
+}
+
+.state-area{
+  margin-top: 20%;
+}
+.texas{
+  width: 90%;
+}
+
+#theImage{
+      position: absolute;
+      z-index: 6;}
+}
+.addedspace{
+  margin-top: 200px;
+}
+/*/ MESSAGE BOX/*/
 #messages { list-style-type: none; margin: 0; padding: 0; }
-#messages li { padding: 5px 10px; }
 #messages li:nth-child(odd) { background: #eee; }
 
 .message-li{
-  font-size: 25px;
+  font-size: 20px;
   color: black;
 }
 
@@ -21,6 +37,7 @@
   margin-right: auto;
 }
 
+/*/ NAVIGATION /*/
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -28,16 +45,16 @@ nav .brand-logo {
 .texvet-logo{
   width: 30%;
   margin-top: .75%;
+  margin-bottom: 1%;
 }
+.header-center{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5%;
+}
+/*/ MAIN CONTENT CSS /*/
 p {
   line-height: 2rem;
-}
-.texas{
-  margin-top: 30%;
-}
-.texas-index{
-  width: 50%;
-  margin-left: 25%;
 }
 .space-top{
    margin-top: 25%;
@@ -101,4 +118,16 @@ p {
 footer.page-footer {
   margin: 0;
   background-color: #161836;
+}
+h4{
+  margin-bottom: 10%;
+}
+h3{
+  margin-bottom: 5%;
+}
+h1{
+  font-size: 55px;
+}
+#header-tag{
+  font-size: 25px;
 }

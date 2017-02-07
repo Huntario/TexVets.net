@@ -7,9 +7,12 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
+<!-- TOP OF PAGE -->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">
@@ -24,18 +27,19 @@
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-  </nav>
 
+  </nav>
+<!-- MAIN BANNER -->
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center text-dark-b">Helping Our Veterans</h1>
+        <h1 class="header center text-dark-b header-center">Helping Our Veterans</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Let us help you Connect</h5>
+          <h5 id="header-tag" class=" header-center header col s12 light">Let us help you Connect</h5>
         </div>
         <div class="row center">
-          <a href="#search-section" id="download-button" class="btn-large waves-effect btn-dark-b">Get Started</a>
+          <a href="#search-section" id="download-button" class="header-center btn-large waves-effect btn-dark-b">Get Started</a>
         </div>
         <br><br>
       </div>
@@ -44,10 +48,9 @@
     <img src="background2.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
-<div class="jumbotron"></div>
   </div>
 
-
+<!-- PAGE CONTENT -->
   <div class="container">
     <div class="section">
 
@@ -55,43 +58,52 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <!-- <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2> -->
             <div class="space-top"></div>
-            <h5 class="center">How to Use Our Chat</h5>
+            <h4 class="center">How to Use Our Chat</h4>
 
-            <p class="light"> 1. Welcome! First thing you will need to do is know your location.</p>
-             <p class="light"> 2. Enter the chat and begin searching for what you need</p>
+            <p class="light"> 1. Welcome! First thing you will need to do is know your location. Use the map to identify the area you are inquiring about.</p>
+             <p class="light"> 2. Enter the chat and begin searching for what you need. We will ask a few initial questions to identify your area of intrest</p>
              <p class="light"> 3.
-            We will help you locate what resources are in your area.</p>
+            We will help you locate what resources are in your area. Giving you quick and useful links and resources.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-           <!-- <h2 class="center brown-text"><i class="material-icons">group</i></h2> -->
-           <div class="space-top"></div>
-            <h5 class="center">Select your location</h5>
+          <div class="space-top"></div>
+            <h4 class="center">Find your location</h4>
 
-            <p class="light">When entering the chat you will be asked your location. Please locate your given area on the map.</p>
-            <img class="texas-index" src="texas-index.png">
+<p><input type="button" id="theButton" value="North Texas" style="background-color: #7092bc;" onclick="NpictureChange()"></p>
+
+<p><input type="button" id="theButton" value="East Texas" style="background-color: #d1d1d1;" onclick="EpictureChange()"></p>
+
+<p><input type="button" id="theButton" value="Central Texas" style="background-color: #c31312;" onclick="CpictureChange()"></p>
+
+<p><input type="button" id="theButton" value="South Texas" style="background-color: #b0cff5;" onclick="SpictureChange()"></p>
+
+<p><input type="button" id="theButton" value="West Texas" style="background-color: #5f5f5f;" onclick="WpictureChange()"></p>
+
+<p><input type="button" id="theButton" value="Main Map" style="background-color: #7092bc;" onclick="MpictureChange()"></p>
           </div>
         </div>
 
         <div class="col s12 m4">
+         <div class="space-top"></div>
           <div class="icon-block">
-            <img class="center texas" src="texas-sections.png">
+            <img id="theImage"
+            class="center texas" src="texas-sections.png">
           </div>
         </div>
       </div>
-
     </div>
   </div>
+
   <div id="search-section">
     <div class="section">
       <div class="row">
       <div class="message-section center">
-      <h4 class="text-dark-b">What can we Help you with?</h4>
-            <ul id="messages" style="overflow-y:scroll; height:75px; background:#d3d3d3"></ul>
+      <h3 class="text-dark-b">What can we Help you with?</h3>
+            <ul id="messages" style="overflow-y:scroll; height:125px; background:#d3d3d3"></ul>
         <form action="">
           <input class="center" id="m" autocomplete="off" />
           <button id="btn-send" class="btn-large waves-effect btn-dark-b">Send</button>
@@ -105,20 +117,20 @@
   <footer class="page-footer footer-dark-b">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col s6">
           <h5 class="white-text">Company Bio</h5>
           <p class="grey-text text-lighten-4">We are a team from UT Coding Bootcamp working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+        <div class="col s3 offset-s1">
+          <h5 class="white-text">Developers</h5>
           <ul>
-            <li><a class="white-text" href="#">Link 1</a></li>
-            <li><a class="white-text" href="#">Link 2</a></li>
-            <li><a class="white-text" href="#">Link 3</a></li>
-            <li><a class="white-text" href="#">Link 4</a></li>
+            <li><a class="white-text" target="_blank" href="https://github.com/Huntario">Hunter - Socket.io & Chatbox</a></li>
+            <li><a class="white-text" target="_blank" href="https://github.com/jcpax">Julia - Front End Development</a></li>
+            <li><a class="white-text" target="_blank" href="#">Damon - Database Developer</a></li>
+            <li><a class="white-text" target="_blank" href="#">Mike - Information Specialist</a></li>
           </ul>
         </div>
-        <div class="col l3 s12">
+        <div class="col s3 offset-s1">
           <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="#">Facebook</a></li>
@@ -155,6 +167,30 @@
     io.emit('chat message', msg);
     });
   });
+function NpictureChange()
+{
+document.getElementById("theImage").src="NTX.png";
+}
+function WpictureChange()
+{
+document.getElementById("theImage").src="ETX.png";
+}
+function CpictureChange()
+{
+document.getElementById("theImage").src="CTX.png";
+}
+function SpictureChange()
+{
+document.getElementById("theImage").src="STX.png";
+}
+function EpictureChange()
+{
+document.getElementById("theImage").src="WTX.png";
+}
+function MpictureChange()
+{
+document.getElementById("theImage").src="texas-sections.png";
+}
   </script>
 
   </body>
