@@ -1,0 +1,79 @@
+
+[
+        {
+            "title": "Austin Outpatient Clinic",
+            "city": "Austin",
+            "link": "http://www.centraltexas.va.gov/locations/Austin.asp"
+        },
+         {
+            "title": "Michael E. DeBakey VA Medical Center",
+            "city": "Houston",
+            "link": "http://www.houston.va.gov/"
+        },
+        {
+            "title": "Lubbock VA Outpatient Clinic",
+            "city": "Lubbock",
+            "link": "http://www.amarillo.va.gov/locations/Lubbock.asp"
+        },
+        {
+            "title": "Thomas E. Creek VA Medical",
+            "city": "Amarillo",
+            "link": "http://www.amarillo.va.gov/"
+        },
+         {
+            "title": "Va Fort Worth Clinic: Crutcher William MD",
+            "city": "Fort Worth",
+            "link": "http://www.northtexas.va.gov/locations/fwopc.asp"
+        },
+        {
+            "title": "Dallas VA Medical Center",
+            "city": "Dallas",
+            "link": "http://www.northtexas.va.gov/"
+        },
+        {
+            "title": "Olin E. Teague Veterans' Medical Center",
+            "city": "Temple",
+            "link": "http://www.centraltexas.va.gov/"
+        },
+         {
+            "title": "Galveston VA Outpatient Clinic",
+            "city": "Galveston",
+            "link": "http://www.houston.va.gov/locations/Galveston_VA_Outpatient_Clinic.asp"
+        },
+        {
+            "title": "West Texas VA Health Care System",
+            "city": "Bigspring",
+            "link": "http://www.bigspring.va.gov/"
+        },
+        {
+            "title": "South Texas Veterans Health Care",
+            "city": "San Antonio",
+            "link": "http://www.southtexas.va.gov/"
+        },
+         {
+            "title": "VA Texas Valley Coastal Bend Health Care System",
+            "city": "Corpus Christi",
+            "link": "http://www.texasvalley.va.gov/locations/Corpus_OPC.asp"
+        },
+        {
+            "title": "Laredo Medical Center North Cln",
+            "city": "Laredo",
+            "link": "http://www.laredomedical.com/laredo-medical-center/home.aspx"
+        },
+        {
+            "title": "VA Texas Valley Coastal Bend Health Care System",
+            "city": "Harlingen",
+            "link": "http://www.texasvalley.va.gov/locations/Harlingen_OPC.asp"
+        },
+         {
+            "title": "El Paso VA Health Care System",
+            "city": "El Paso",
+            "link": "http://www.elpaso.va.gov/"
+        },
+         {
+            "title": "Center for Wellness and Health",
+            "city": "Odessa",
+            "link": "http://procareodessa.com/"
+        },
+        
+    ]

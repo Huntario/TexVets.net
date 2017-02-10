@@ -1,0 +1,85 @@
+
+
+ [
+        {
+            "title": "University of Texas",
+            "city": "Austin",
+            "link": "http://deanofstudents.utexas.edu/veterans/"
+        },
+        {
+            "title": "University of Houston",
+            "city": "Houston",
+            "link": "http://www.uh.edu/future-students/veterans/"
+        },
+        {
+            "title": "Texas Tech University",
+            "city": "Lubbock",
+            "link": "http://www.depts.ttu.edu/diversity/mvp/"
+        },
+        {
+            "title": "Amarillo College",
+            "city": "Amarillo",
+            "link": "https://www.actx.edu/veterans/"
+        },
+         {
+            "title": "Texas Christian University",
+            "city": "Fort Worth",
+            "link": "https://www.actx.edu/veterans/"
+        },
+         {
+            "title": "Southern Methodist University",
+            "city": "Dallas",
+            "link": "http://www.smu.edu/EnrollmentServices/Veterans"
+        },
+         {
+            "title": "Baylor University",
+            "city": "Waco",
+            "link": "http://www.baylor.edu/vets/"
+        },
+         {
+            "title": "Texas A&M University at Galveston",
+            "city": "Galveston",
+            "link": "http://www.tamug.edu/veterans/"
+        },
+        {
+            "title": "Midland College",
+            "city": "Midland",
+            "link": "http://www.midland.edu/students/student_services/va/index.php"
+        },
+        {
+            "title": "University of Texas San Antonio",
+            "city": "San Antonio",
+            "link": "http://www.utsa.edu/va/"
+        },
+        {
+            "title": "Texas A&M University Corpus Christi",
+            "city": "Corpus Christi",
+            "link": "http://vets.tamucc.edu/"
+        },
+        {
+            "title": "Texas A&M International University",
+            "city": "Laredo",
+            "link": "http://www.tamiu.edu/registrar/veterans.shtml"
+        },
+        {
+            "title": "University of Texas Rio Grande",
+            "city": "Brownsville",
+            "link": "http://www.tamiu.edu/registrar/veterans.shtml"
+        },
+        {
+            "title": "Texas State Technical College",
+            "city": "Harlingen",
+            "link": "http://www.tstc.edu/veterans"
+        },
+        {
+            "title": "University of Texas at El Paso",
+            "city": "El Paso",
+            "link": "http://military.utep.edu/"
+        },
+        {
+            "title": "University of Texas of the Permian Basin",
+            "city": "Odessa",
+            "link": "http://www.utpb.edu/campus-life/veterans-services"
+        },
+       
+    ]
