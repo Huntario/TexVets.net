@@ -32,25 +32,12 @@ function respondToMessage(message){
 		2 : "You said 2!",
 		help : "How can I help you today?"
 	}
+	//This sets 'response' equal to the key value matching 'message' in 'responseKeys'
 	var response = responseKeys[message];
 	if (response === undefined){
 		response = "Sorry I don't understand, pleae keep trying."
 	}
 	return response;
-	// var response;
-	// if (message == 1){
-	// 	response = "You said 1!";
-	// 	break;
-	// }
-	// if (message == 2){
-	// 	response = "You said 2!";
-	// 	break;
-	// }
-	// else {
-	// 	response = "Sorry I don't recognize what you said... Please keep talking to me."
-	// 	break;
-	// }
-	// return response;
 	}
 
 var welcome = "Hello, welcome to TexVets. I'm here to help you get information about transitioning to civilian life in Texas.";
