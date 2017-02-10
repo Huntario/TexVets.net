@@ -49,7 +49,6 @@
   </div>
 
   </div>
-
 <!-- PAGE CONTENT -->
   <div class="container">
     <div class="section">
@@ -72,126 +71,110 @@
           <div class="icon-block">
           <div class="space-top"></div>
             <h4 class="center">Find your location</h4>
-
-<p><input type="button" id="theButton" value="North Texas" style="background-color: #7092bc;" onclick="NpictureChange()"></p>
-
-<p><input type="button" id="theButton" value="East Texas" style="background-color: #d1d1d1;" onclick="EpictureChange()"></p>
-
-<p><input type="button" id="theButton" value="Central Texas" style="background-color: #c31312;" onclick="CpictureChange()"></p>
-
-<p><input type="button" id="theButton" value="South Texas" style="background-color: #b0cff5;" onclick="SpictureChange()"></p>
-
-<p><input type="button" id="theButton" value="West Texas" style="background-color: #5f5f5f;" onclick="WpictureChange()"></p>
-
-<p><input type="button" id="theButton" value="Main Map" style="background-color: #7092bc;" onclick="MpictureChange()"></p>
+<!-- MAP CONTENT -->
+        <p><input type="button" id="theButton" value="North Texas" style="background-color: #7092bc;" onclick="NpictureChange()"></p>
+        <p><input type="button" id="theButton" value="East Texas" style="background-color: #d1d1d1;" onclick="EpictureChange()"></p>
+        <p><input type="button" id="theButton" value="Central Texas" style="background-color: #c31312;" onclick="CpictureChange()"></p>
+        <p><input type="button" id="theButton" value="South Texas" style="background-color: #b0cff5;" onclick="SpictureChange()"></p>
+        <p><input type="button" id="theButton" value="West Texas" style="background-color: #5f5f5f;" onclick="WpictureChange()"></p>
+        <p><input type="button" id="theButton" value="Main Map" style="background-color: #7092bc;" onclick="MpictureChange()"></p>
+          </div>
+            </div>
+              <div class="col s12 m4">
+               <div class="space-top"></div>
+                <div class="icon-block">
+                  <img id="theImage"
+                  class="center texas" src="texas-sections.png">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="col s12 m4">
-         <div class="space-top"></div>
-          <div class="icon-block">
-            <img id="theImage"
-            class="center texas" src="texas-sections.png">
+<!-- CHAT HTML -->  
+      <div id="search-section">
+        <div class="section">
+          <div class="row">
+          <div class="message-section center">
+          <h3 class="text-dark-b">What can we Help you with?</h3>
+                <ul id="messages" style="overflow-y:scroll; height:125px; background:#d3d3d3"></ul>
+            <form action="">
+              <input class="center" id="m" autocomplete="off" />
+              <button id="btn-send" class="btn-large waves-effect btn-dark-b">Send</button>
+            </form>
+        </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div id="search-section">
-    <div class="section">
-      <div class="row">
-      <div class="message-section center">
-      <h3 class="text-dark-b">What can we Help you with?</h3>
-            <ul id="messages" style="overflow-y:scroll; height:125px; background:#d3d3d3"></ul>
-        <form action="">
-          <input class="center" id="m" autocomplete="off" />
-          <button id="btn-send" class="btn-large waves-effect btn-dark-b">Send</button>
-        </form>
-    </div>
-      </div>
-    </div>
-</div>
-
-
-  <footer class="page-footer footer-dark-b">
-    <div class="container">
-      <div class="row">
-        <div class="col s6">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team from UT Coding Bootcamp working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+<!-- FOOTER HTML -->
+      <footer class="page-footer footer-dark-b">
+        <div class="container">
+         <div class="row">
+            <div class="col s6">
+             <h5 class="white-text">Company Bio</h5>
+               <p class="grey-text text-lighten-4">We are a team from UT Coding Bootcamp working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+            </div>
+            <div class="col s3 offset-s1">
+             <h5 class="white-text">Developers</h5>
+                <ul>
+                  <li><a class="white-text" target="_blank" href="https://github.com/Huntario">Hunter - Socket.io & Chatbox</a></li>
+                  <li><a class="white-text" target="_blank" href="https://github.com/jcpax">Julia - Front End Development</a></li>
+                  <li><a class="white-text" target="_blank" href="#">Damon - Database Developer</a></li>
+                  <li><a class="white-text" target="_blank" href="#">Mike - Information Specialist</a></li>
+                </ul>
+            </div>
+            <div class="col s3 offset-s1">
+              <h5 class="white-text">Connect</h5>
+              <ul>
+                <li><a class="white-text" href="#">Facebook</a></li>
+                <li><a class="white-text" href="#">Github</a></li>
+                <li><a class="white-text" href="#">Twitter</a></li>
+                <li><a class="white-text" href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col s3 offset-s1">
-          <h5 class="white-text">Developers</h5>
-          <ul>
-            <li><a class="white-text" target="_blank" href="https://github.com/Huntario">Hunter - Socket.io & Chatbox</a></li>
-            <li><a class="white-text" target="_blank" href="https://github.com/jcpax">Julia - Front End Development</a></li>
-            <li><a class="white-text" target="_blank" href="#">Damon - Database Developer</a></li>
-            <li><a class="white-text" target="_blank" href="#">Mike - Information Specialist</a></li>
-          </ul>
+        <div class="footer-copyright">
+          <div class="container">
+          </div>
         </div>
-        <div class="col s3 offset-s1">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#">Facebook</a></li>
-            <li><a class="white-text" href="#">Github</a></li>
-            <li><a class="white-text" href="#">Twitter</a></li>
-            <li><a class="white-text" href="#">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      </div>
-    </div>
-  </footer>
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="/socket.io/socket.io.js"></script>
+      </footer>
+<!-- LIBRARY SCRIPTS-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
+      <script src="/socket.io/socket.io.js"></script>
+<!-- SOCKET.IO JS SCRIPTS-->
   <script>
     var socket = io();
     $('form').submit(function(){
     var m = $('#m').val();
-    socket.emit('chat message', m);
-    $('#messages').prepend('<li class="message-li">' + m);
-    $('#messages').prepend('<br>');
-    $('#m').val('');
+      socket.emit('chat message', m);
+      $('#m').val('');
     return false;
   });
-    io.on('connection', function(socket){
-    socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
-    });
+      socket.on('chat message', function(msg){
+      $('#messages').append($('<li>').text(msg));
   });
-function NpictureChange()
-{
-document.getElementById("theImage").src="NTX.png";
-}
-function WpictureChange()
-{
-document.getElementById("theImage").src="ETX.png";
-}
-function CpictureChange()
-{
-document.getElementById("theImage").src="CTX.png";
-}
-function SpictureChange()
-{
-document.getElementById("theImage").src="STX.png";
-}
-function EpictureChange()
-{
-document.getElementById("theImage").src="WTX.png";
-}
-function MpictureChange()
-{
-document.getElementById("theImage").src="texas-sections.png";
-}
-  </script>
+<!-- MAP JS FUNCTIONS -->
+    function NpictureChange(){
+    document.getElementById("theImage").src="NTX.png";
+    }
+    function WpictureChange(){
+    document.getElementById("theImage").src="ETX.png";
+    }
+    function CpictureChange(){
+    document.getElementById("theImage").src="CTX.png";
+    }
+    function SpictureChange(){
+    document.getElementById("theImage").src="STX.png";
+    }
+    function EpictureChange(){
+    document.getElementById("theImage").src="WTX.png";
+    }
+    function MpictureChange(){
+    document.getElementById("theImage").src="texas-sections.png";
+    }
+      </script>
 
   </body>
 </html>
