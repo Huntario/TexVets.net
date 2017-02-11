@@ -1,0 +1,84 @@
+
+[
+        {
+            "title": "Veterans of Foreign Wars",
+            "city": "Austin",
+            "link": "http://www.vfw.org/"
+        },
+        {
+            "title":"Lone Star Veterans Association",
+            "city":"Houston",
+            "link":"http://www.lonestarveterans.org/"
+        },
+        {
+            "title": "American Legion",
+            "city": "Lubbock",
+            "link": "http://www.americanlegionpost575.org/"
+        },
+         {
+            "title": "Ussery-Roan Tx State Veterans",
+            "city": "Amarillo",
+            "link": "http://www.glo.texas.gov/vlb/vethomes/index.html"
+        },
+         {
+            "title": "Veterans of Foreign Wars",
+            "city": "Fort Worth",
+            "link": "http://www.vfwpost8235.org/"
+        },
+         {
+            "title": "Honor Courage Commitment",
+            "city": "Dallas",
+            "link": "http://www.honorcouragecommitment.org/"
+        },
+         {
+            "title": "Veterans One Stop",
+            "city": "Waco",
+            "link": "http://www.hotrmhmr.org/veterans-onestop.html"
+        },
+         {
+            "title": "Military Veteran Peer Network",
+            "city": "Galveston",
+            "link": "http://www.milvetpeer.net/group/Galveston"
+        },
+         {
+            "title": "Midland Veterans Track and Field League",
+            "city": "Midland",
+            "link": "https://mvtfl.wordpress.com/"
+        },
+         {
+            "title": "Military Warriors Support Foundation",
+            "city": "San Antonio",
+            "link": "https://militarywarriors.org/"
+        },
+         {
+            "title": "Paralyzed Veteransof America",
+            "city": "Corpus Christi",
+            "link": "http://texaspva.org/"
+        },
+         {
+            "title": "Laredo Veterans Coalition - Veterans Serving Veterans",
+            "city": "Laredo",
+            "link": "https://www.texvet.com/partners/laredo-veterans-coalition-veterans-serving-veterans"
+        },
+         {
+            "title": "Veterans of Foreign Wars",
+            "city": "Brownsville",
+            "link": "http://www.texvet.org/events/vfw-post-2035-brownsville"
+        },
+         {
+            "title": "Veterans of Foreign Wars",
+            "city": "Harlingen",
+            "link": "http://myvfw.org/tx/post2410/"
+        },
+         {
+            "title": "Disabled American Veterans",
+            "city": "El Paso",
+            "link": "https://www.dav.org/"
+        },
+         {
+            "title": "Disabled American Veterans",
+            "city": "Odessa",
+            "link": "https://www.facebook.com/DAV.Midessa/"
+        },
+        
+    ]
