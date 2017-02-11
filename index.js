@@ -7,6 +7,7 @@ var Jerbs = require("./models/Jerbs.js");
 var Clinics = require("./models/Clinics.js");
 var Social = require("./models/Social.js");
 var mongoose = require("mongoose");
+var _ = require('underscore');
 var mongoUri;
 if (process.argv[2] === 'production') {
 	var keys = require("./keys.js");
@@ -25,8 +26,22 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+function getLocation(message){
+	var messageArray = message.split(" ");
+	console.log(messageArray);
+	var locationArray = ["Amarillo", "Lubbock", "Dallas", "Ft. Worth", "Waco", "Houston", "Galveston", "Midland", "Austin", "San Antonio", "Laredo", "Brownsville", "St. Padre Island", "El Paso", "Odessa"];
+	var location = (_.intersection(messageArray, locationArray));
+	if (location.length < 1){
+		location = "Sorry, I don't couldn't find that location."
+		}
+		console.log(location);
+		return location;
+	}
+
 
 function respondToMessage(message){
+	var m = message;
+	getLocation(m);
 	var responseKeys = {
 		1 : "You said 1!",
 		2 : "You said 2!",
@@ -35,20 +50,17 @@ function respondToMessage(message){
 	//This sets 'response' equal to the key value matching 'message' in 'responseKeys'
 	var response = responseKeys[message];
 	if (response === undefined){
-		response = "Sorry I don't understand, pleae keep trying."
+		response = "Sorry, I don't understand, please keep trying."
 	}
 	return response;
 	}
-
+	
 var welcome = "Hello, welcome to TexVets. I'm here to help you get information about transitioning to civilian life in Texas.";
-var options = "Based on the map above, what area are you considering?";
-var locations = "You can say (1) North Texas, (2) East Texas, (3) Central Texas";
+var locations = "Which of the cities above will you be closest too? AND What topics are you interested in? Medical, social, education, or jobs?";
 
 io.on('connection', function(socket){
 	io.emit('chat message', welcome);
-	io.emit('chat message', options);
 	io.emit('chat message', locations);
-
    	socket.on('chat message', function(msg){
     	console.log('message: ' + msg);
     	io.emit('chat message', msg);
