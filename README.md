@@ -1,10 +1,11 @@
 # TexasVets.net
-An online chat bot to help veterans transition to civilian life.
-TEAM
-Julia - frontend
-Hunter - frontend/backend
-Damon - backend
-Mike - backend
+An online chat bot to help veterans transition to civilian life.  
+TEAM  
+
+Julia - frontend  
+Hunter - frontend/backend  
+Damon - backend  
+Mike - backend  
 
 
 #Feature Agenda
