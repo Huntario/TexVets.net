@@ -16,3 +16,4 @@ Mike - backend
 4. Create script to put JSON doc into database
 5. Create Facebook.com / Google login
 6. Use social avatars
+7. Add natural language processing support with IBM Watson
