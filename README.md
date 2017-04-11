@@ -1,29 +1,17 @@
 # TexasVets.net
 An online chat bot to help veterans transition to civilian life.
+TEAM
+Julia - frontend
+Hunter - frontend/backend
+Damon - backend
+Mike - backend
 
 
-TEAM ROLES
+#Feature Agenda
 
-Julia - frontend - (PaperChat --> Material desing and Polymer)
-
-		--https://github.com/pubnub/paper-chat
-		1. Make it look great
-		2. Help connect chat window to socket.io
-
-Hunter - frontend/backend - (Socket.io)
-
-		--http://socket.io/
-		1. Get chat data to the backend
-		2. Get server response back to the chat application
-		3. Parse user sentences down to keywords
-
-Damon - backend - (Node/Mongo DB)
-
-		1. Take key terms, and search "tags" in MongoDB.
-		2. Return list of 3 most plausible responses.
-
-Mike - backend - (MongoDB)
-
-		1. Determine info, structure in a MongoDB database
-		2. Create "tags" that help categorize data so the it can be retrvied with keywords
-
+1. Make links clickable
+2. Add database support
+3. Allow authenticated users to add data to back end
+4. Create script to put JSON doc into database
+5. Create Facebook.com / Google login
+6. Use social avatars
