@@ -17,3 +17,4 @@ Mike - backend
 5. Create Facebook.com / Google login
 6. Use social avatars
 7. Add natural language processing support with IBM Watson
+8. Convert frontend into React app
